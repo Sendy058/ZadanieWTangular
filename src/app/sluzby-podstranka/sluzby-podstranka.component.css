@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.row {
+  margin-right: 0!important;
+}
+.nav-bar {
+  background-color: black;
+  position:absolute;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  color:orange ;
+  font-size: 25px;
+  width: 100%;
+  z-index: 999;
+}
+.links a {
+  text-decoration: none;
+  color:orange;
+  margin-right: 40px;
+}
+.links a:hover {
+  color: red;
+}
+.logo {
+  color: orange;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.logo:hover {
+  color: orange;
+}
+.links-responsive {
+  display: none;
+  flex-direction: column;
+  width: 100vw;
+  background-color: black;
+  text-align: center;
+  position: absolute;
+  z-index: 999;
+
+
+}
+.links-responsive a {
+  text-decoration: none;
+  color: orange;
+}
+.links-responsive a:hover {
+  text-decoration: none;
+  color: red;
+}
+.menu-btn {
+  display: none !important;
+
+}
+.title1 {
+  padding-top: 50px;
+}
+@media only screen and (max-width: 900px) {
+  .links{
+    display: none;
+  }
+  .menu-btn {
+    display: block !important;
+    font-size: 40px !important;
+  }
+  .serv1-img,.serv2-img,.serv3-img,.serv4-img,.serv5-img,.serv6-img,.serv7-img{
+    box-shadow: inset 0px 0px 115px 20px rgba(0,0,0,0.9) !important;
+
+  }
+  .or{
+    order: 1;
+  }
+
+
+
+
+}
+@media only screen and (max-width: 780px) {
+
+}
+.serv1-img{
+  background-image: url("src/assets/servicecontrol.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  box-shadow: inset 0px 0px 115px 120px rgba(0,0,0,0.9);
+
+}
+.title1 {
+
+  background-color: black;
+  color: orange;
+  margin: 0;
+
+}
+.servsec1 {
+  height: 500px;
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+.serv2-img {
+  background-image: url("src/assets/wheelbreak.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  box-shadow: inset 0px 0px 115px 120px rgba(0,0,0,0.9);
+
+}
+.servsec2 {
+  background-color: black;
+  height: 500px;
+  color: white;
+}
+footer {
+  background-color: black;
+  height: 80px;
+  color: orange;
+}
+.servsec3 {
+  height: 500px;
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+.serv3-img {
+  background-image: url("src/assets/engine1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  box-shadow: inset 0px 0px 115px 120px rgba(0,0,0,0.9);
+
+}
+.servsec4 {
+  height: 500px;
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+.serv4-img {
+  background-image: url("src/assets/tires.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  box-shadow: inset 0px 0px 115px 120px rgba(0,0,0,0.9);
+
+}
+.servsec5 {
+  height: 500px;
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+.serv5-img {
+  background-image: url("src/assets/exhaust.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  box-shadow: inset 0px 0px 115px 120px rgba(0,0,0,0.9);
+
+}
+.servsec6 {
+  height: 500px;
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+.serv6-img {
+  background-image: url("src/assets/dpf.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  box-shadow: inset 0px 0px 115px 120px rgba(0,0,0,0.9);
+
+}
+.servsec7 {
+  height: 500px;
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+.serv7-img {
+  background-image: url("src/assets/oil.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  box-shadow: inset 0px 0px 115px 120px rgba(0,0,0,0.9);
+
+}
+h2 {
+  color: orange;
+}
+.fa-youtube {
+  color:  #bb0000;
+}
+.fa-instagram {
+  color:  #dd4b39;
+}
+.menu-exit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 25px!important;
+  color:orange;
+  cursor: pointer;
+}

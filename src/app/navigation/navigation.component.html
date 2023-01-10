@@ -1,0 +1,25 @@
+<nav class="nav-bar nav-responsive >">
+  <a class="logo" title="Logo" href="">Autoservis</a>
+
+  <div class="links ">
+    <a routerLink='' routerLinkActive="active" title="Hlavná stránka">Domov</a>
+    <a href="#about" class="" title="Sekcia o nas">O nás</a>
+    <a routerLink="/sluzby" routerLinkActive="active"  title="Podstranka sluzby">Služby</a>
+    <a routerLink="/kontakty" routerLinkActive="active" title="Podstranka kontakt">Kontakt</a>
+    <a routerLink='/order' routerLinkActive="active" title="Objednaj sa na servis">Objednaj sa</a>
+    <a *ngIf="!isRoute" (click)="openDialog()" routerLinkActive="active" title="Objednaj sa na servis">Vypis</a>
+  </div>
+  <span class="material-symbols-outlined menu-btn" id="btn" (click)="toggleMenu()">menu</span>
+
+
+</nav>
+<div class="links-responsive " [style.display]="showMenu ? 'flex' : 'none'">
+  <a routerLink='' routerLinkActive="active" title="Hlavná stránka" >Domov</a>
+  <a href="#about" class="">O nás</a>
+  <a routerLink="/sluzby" routerLinkActive="active" u title="Podstranka sluzby">Služby</a>
+  <a routerLink="/kontakty" routerLinkActive="active" title="Podstranka kontakt">Kontakt</a>
+  <a routerLink='/order' routerLinkActive="active" title="Objednaj sa na servis">Objednaj sa</a>
+  <a *ngIf="!isRoute"  (click)="openDialog()" routerLinkActive="active" title="Objednaj sa na servis">Vypis</a>
+  <span class="material-symbols-outlined menu-exit" (click)="toggleMenu()">close</span>
+</div>
+

@@ -1,0 +1,109 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+<app-navigation></app-navigation>
+<section class="orderForm">
+  <div class="container">
+    <h1>Objednaj sa na servis</h1>
+    <form action="#" class="form" (submit)="
+      onSubmit($event,{
+          Meno:meno.value,
+          TelCislo:telcislo.value,
+          Znacka:znacka.value,
+          Model:model.value,
+          Stav:stav.value,
+          Vin:vin.value,
+          Palivo:palivo.value,
+          Sluzba:sluzba.value,
+          RokVyroby:rokvyroby.valueAsNumber,
+          Vykon:vykon.valueAsNumber
+
+
+          }); meno.value='';
+              znacka.value='';
+              model.value='';
+              vin.value='';
+              rokvyroby.value='';
+              vykon.value='';
+              palivo.value='';
+              sluzba.value='';
+
+
+
+
+
+
+
+
+
+                      " >
+      <div class="input-box">
+        <label>Meno</label>
+        <input type="text" placeholder="Zadaj svoje meno" required #meno/>
+      </div>
+
+      <div class="input-box">
+        <label>Telefonné číslo</label>
+        <input type="text" placeholder="Zadaj telefonne čislo" required #telcislo/>
+      </div>
+
+      <div class="column">
+        <div class="input-box">
+          <label>Značka auta</label>
+          <input type="text" placeholder="Značka auta" required #znacka/>
+        </div>
+        <div class="input-box">
+          <label>Model</label>
+          <input type="text" placeholder="Model" required #model/>
+        </div>
+      </div>
+      <div class="staf-box">
+        <h3>Stav</h3>
+        <div class="staf-option">
+          <div class="staf">
+            <input type="radio" id="check-stafP" name="staf" checked value="Pojazdne" #stav/>
+            <label for="check-stafP">Pojazdné</label>
+          </div>
+          <div class="staf">
+            <input type="radio" id="check-stafN" name="staf" value="Nepojazdne" #stav/>
+            <label for="check-stafN">Nepojazdné</label>
+          </div>
+
+        </div>
+      </div>
+      <div class="input-box address">
+        <label>VIN čislo</label>
+        <input type="text" placeholder="VIN" required #vin/>
+        <div class="column">
+          <div class="select-box">
+            <select #palivo>
+              <option hidden>Palivo</option>
+              <option>Diesel</option>
+              <option>Benzin</option>
+            </select>
+          </div>
+          <div class="select-box">
+            <select #sluzba>
+              <option hidden>Služba</option>
+              <option value="Servisne Prehliadky">Servisne prehliadky</option>
+              <option value="Servis Brzd">Servis brzd</option>
+              <option value="Pnuservis">Pneuservis</option>
+              <option value="Priprava na STK a EK">Priprava na STK a EK</option>
+              <option value="Cistenie DPF">Cistenie DPF</option>
+              <option value="Drobne opravy">Drobne opravy</option>
+              <option value="Vymena oleja">Vymena oleja</option>
+            </select>
+          </div>
+        </div>
+        <div class="column">
+          <input type="number" min="1900" max="2199" step="1" value="2023" #rokvyroby/>
+          <input type="number" placeholder="Výkon(Kw)" required #vykon/>
+        </div>
+      </div>
+      <button
+        type="submit">Objednaj sa !
+      </button>
+    </form>
+  </div>
+</section>

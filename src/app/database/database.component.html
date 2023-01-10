@@ -1,0 +1,86 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+<app-navigation></app-navigation>
+
+
+
+
+<section class="sectiontable">
+
+<div class="tabulka">
+  <h1 class="sectiontabletitle">Objednane auta na servis</h1>
+
+  <div class="filtersection">
+
+    <h3>Filter:</h3>
+    <div class="input-box">
+
+      <div class="select-box" id="ii">
+        <select class="input-box1" #filterCategory>
+          <option hidden>Filtruj podla</option>
+          <option value="vsetky">Vsetky</option>
+          <option value="Meno">Mena</option>
+          <option value="Telcislo">Tel. cislo</option>
+          <option value="RokVyroby">Rok vyroby</option>
+          <option value="Znacka">Znacka</option>
+
+
+        </select>
+      </div>
+    </div>
+    <div class="input-box2">
+
+      <input type="text" placeholder="Hodnota" #filterValue />
+      <mat-button-toggle class="filtrujbtn" (click)="filterData(filterCategory.value,filterValue.value);filterValue.value=''">Filtruj</mat-button-toggle>
+    </div>
+  </div>
+  <table>
+    <thead>
+
+    <tr class="tabletitle">
+      <th>Meno</th>
+      <th>Tel. Cislo</th>
+      <th>Znacka</th>
+      <th>Model</th>
+      <th>Stav</th>
+      <th>Potrebna oprava</th>
+      <th>Vin cislo</th>
+      <th>Palivo</th>
+      <th>Rok vyroby</th>
+      <th>Vykon(Kw)</th>
+      <th></th>
+      <th></th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let car of filterCars" class="tableitems">
+      <td>{{car.Meno}}</td>
+      <td>{{car.TelCislo}}</td>
+      <td>{{car.Znacka}}</td>
+      <td>{{car.Model}}</td>
+      <td>{{car.Stav}}</td>
+      <td>{{car.Sluzba}}</td>
+      <td>{{car.Vin}}</td>
+      <td>{{car.Palivo}}</td>
+      <td>{{ car.RokVyroby}}</td>
+      <td>{{car.Vykon}}</td>
+      <td><button class="btndel"(click)="delete(car)" ><span class="material-symbols-outlined " id="btndel">delete</span></button></td>
+      <td><button class="btnupd" (click)="returnID()"><span class="material-symbols-outlined " id="btnupd">upgrade</span></button></td>
+
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+</section>
+<footer title="sekcia footer">
+  Webove technologie <br>
+  © 2022 <br>
+  <a href="" class="fa fa-facebook"></a>
+  <a href="" class="fa fa-twitter"></a>
+  <a href="" class="fa fa-youtube"></a>
+  <a href="" class="fa fa-instagram"></a>
+</footer>
