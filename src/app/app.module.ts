@@ -19,6 +19,7 @@ import {MatDialog, MatDialogModule} from "@angular/material/dialog";
 import {MatLegacyButtonModule} from "@angular/material/legacy-button";
 import {MatFormFieldModule, MatLabel} from "@angular/material/form-field";
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
+import { FooterComponent } from './footer/footer.component';
 
 
 const routes: Routes = [
@@ -52,7 +53,8 @@ const routes: Routes = [
     DatabaseComponent,
     OrderFormComponent,
     NavigationComponent,
-    VypisLoginComponent
+    VypisLoginComponent,
+    FooterComponent
   ],
 
   imports: [

@@ -23,10 +23,10 @@ interface Car {
 })
 
 export class OrderFormComponent {
-  public cars: Observable<Car[]>
+  public cars: Car[] = [];
 
   constructor(private firestore: AngularFirestore) {
-    this.cars = firestore.collection<Car>("cars").valueChanges()
+   // this.cars = firestore.collection("cars").valueChanges()
 
   }
 
@@ -45,11 +45,4 @@ export class OrderFormComponent {
 
   }
 
-  public convertTimestamp(timestamp: any) {
-    let date = timestamp.toDate();
-    let yyyy = date.getFullYear();
-
-    date = +yyyy;
-    return date;
-  }
 }

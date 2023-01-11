@@ -7,57 +7,6 @@
 .row {
   margin-right: 0!important;
 }
-.nav-bar {
-  background-color: black;
-  position: absolute;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  color:orange ;
-  font-size: 25px;
-  width: 100%;
-  z-index: 999;
-}
-.links a {
-  text-decoration: none;
-  color:orange;
-  margin-right: 40px;
-}
-.links a:hover {
-  color: red;
-}
-.logo {
-  color: orange;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.logo:hover {
-  color: orange;
-}
-.links-responsive {
-  display: none;
-  flex-direction: column;
-  width: 100vw;
-  background-color: black;
-  text-align: center;
-  position: absolute;
-  z-index: 999;
-
-
-}
-.links-responsive a {
-  text-decoration: none;
-  color: orange;
-}
-.links-responsive a:hover {
-  text-decoration: none;
-  color: red;
-}
-.menu-btn {
-  display: none !important;
-
-}
-
 
 .item1 { grid-area: header; }
 .item2 { grid-area: main; }
@@ -124,13 +73,7 @@
 
 
 @media only screen and (max-width: 900px){
-  .links{
-    display: none;
-  }
-  .menu-btn {
-    display: block !important;
-    font-size: 40px !important;
-  }
+
   .grid-container{
     grid-gap: 0px;
     grid-template-columns: 120px auto 120px;
@@ -231,54 +174,5 @@ input[type=submit]:hover {
 
 }
 
-.sekcia_zmena {
-  background-color: gray;
-  text-align: center;
-  color: black;
-  padding: 20px;
-  font-size: 25px;
-
-}
-
-.img{
-  width: 100%;
-}
-.button {
-  background-color: darkgoldenrod;
-  color: white;
-  padding: 8px 15px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-
-}
-
-.button:hover {
-  background-color: red;
-}
-
-
-footer {
-  background-color: black;
-  text-align: center;
-  color:orange;
-  height: 80px;
-}
-
-.fa-youtube {
-  color:  #bb0000;
-}
-.fa-instagram {
-  color:  #dd4b39;
-}
-
-.menu-exit {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 25px!important;
-  color:orange;
-  cursor: pointer;
-}
 
 

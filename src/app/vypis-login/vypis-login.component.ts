@@ -21,7 +21,7 @@ export class VypisLoginComponent {
       this.router.navigateByUrl('/databaza');
       this.dialogRef.close();
     }else {
-      window.alert("Nespravne udaje");
+      window.alert("Nespravne udaje, pristup len opravnenym osobam");
     }
 
 

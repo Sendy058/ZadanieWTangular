@@ -1,16 +1,15 @@
 <div class="vypisForm">
-  <span class="material-symbols-outlined" (click)="onNoClick()">close</span>
 
-  <h1 mat-dialog-title>Prihlas sa!</h1>
-    <mat-label class="label">Meno</mat-label>
-    <input class="input" type="text" placeholder="Zadaj meno" #meno>
-    <mat-label class="label" >Heslo</mat-label>
-    <input class="input" type="password" #heslo placeholder="Zadaj heslo">
-    <mat-button-toggle class="loginbtn" (click)="openDatabase({
+  <mat-label class="label">Login</mat-label>
+  <input class="input" type="text" placeholder="Zadaj meno" #meno>
+  <mat-label class="label">Heslo</mat-label>
+  <input class="input" type="password" #heslo placeholder="Zadaj heslo">
+  <mat-button-toggle class="loginbtn" (click)="openDatabase({
     name:meno.value,
     password:heslo.value
-    })">Prihlas</mat-button-toggle>
-    <mat-button-toggle  class="closebtn" (click)="onNoClick()">Zavri</mat-button-toggle>
+    })">Prihlas
+  </mat-button-toggle>
+  <mat-button-toggle class="closebtn" (click)="onNoClick()">Zavri</mat-button-toggle>
 
 </div>
 

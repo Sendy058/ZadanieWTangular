@@ -63,7 +63,7 @@ export class DatabaseComponent {
 
   public toggleMenu() {
     this.showMenu = !this.showMenu;
-    console.log(this.showMenu);
+    //console.log(this.showMenu);
   }
 
   public delete(car: Car) {

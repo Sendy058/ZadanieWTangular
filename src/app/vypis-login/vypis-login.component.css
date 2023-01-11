@@ -7,28 +7,33 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("src/assets/break.jpg");
+  background-image: url("src/assets/mainbck.jpg");
+  background-size:cover;
+  background-position:center ;
 
 
 }
 .vypisForm h1 {
   color: orange;
   text-align: center;
+  font-size: 30px;
 }
 .input{
   width: 70%;
- height: 38px;
+  height: 38px;
   border-radius: 5px;
-  font-size: 25px;
+  font-size: 15px;
 
 }
 .loginbtn,.closebtn {
   margin-top:25px;
   width: 50%;
   background-color: orange;
+  border: none;
+
 }
 .label{
-  color: white;
+  color: orange;
   font-size: 25px;
 }
 
