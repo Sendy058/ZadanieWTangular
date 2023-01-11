@@ -12,7 +12,6 @@
           TelCislo:telcislo.value,
           Znacka:znacka.value,
           Model:model.value,
-          Stav:stav.value,
           Vin:vin.value,
           Palivo:palivo.value,
           Sluzba:sluzba.value,
@@ -21,6 +20,7 @@
 
 
           }); meno.value='';
+              telcislo.value='';
               znacka.value='';
               model.value='';
               vin.value='';
@@ -49,20 +49,7 @@
           <input type="text" placeholder="Model" required #model/>
         </div>
       </div>
-      <div class="staf-box">
-        <h3>Stav</h3>
-        <div class="staf-option">
-          <div class="staf">
-            <input type="radio" id="check-stafP" name="staf" checked value="Pojazdne" #stav/>
-            <label for="check-stafP">Pojazdné</label>
-          </div>
-          <div class="staf">
-            <input type="radio" id="check-stafN" name="staf" value="Nepojazdne" #stav/>
-            <label for="check-stafN">Nepojazdné</label>
-          </div>
 
-        </div>
-      </div>
       <div class="input-box address">
         <label>VIN čislo</label>
         <input type="text" placeholder="VIN" required #vin/>

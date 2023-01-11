@@ -21,7 +21,7 @@
             <option hidden>Filtruj podla</option>
             <option value="vsetky">Vsetky</option>
             <option value="Meno">Mena</option>
-            <option value="Telcislo">Tel. cislo</option>
+            <option value="TelCislo">Tel. cislo</option>
             <option value="RokVyroby">Rok vyroby</option>
             <option value="Znacka">Znacka</option>
 
@@ -32,9 +32,10 @@
       <div>
 
         <input  class="input-box2"  type="text" placeholder="Hodnota" #filterValue/>
-        <mat-button-toggle title="Filtruj" class="filtrujbtn"
+        <mat-button-toggle  title="Filtruj" class="filtrujbtn"
                            (click)="filterData(filterCategory.value,filterValue.value);filterValue.value=''">Filtruj
         </mat-button-toggle>
+
       </div>
     </div>
     <table>
@@ -45,7 +46,6 @@
         <th>Tel. Cislo</th>
         <th>Znacka</th>
         <th>Model</th>
-        <th>Stav</th>
         <th>Potrebna oprava</th>
         <th>Vin cislo</th>
         <th>Palivo</th>
@@ -62,7 +62,6 @@
         <td>{{car.TelCislo}}</td>
         <td>{{car.Znacka}}</td>
         <td>{{car.Model}}</td>
-        <td>{{car.Stav}}</td>
         <td>{{car.Sluzba}}</td>
         <td>{{car.Vin}}</td>
         <td>{{car.Palivo}}</td>

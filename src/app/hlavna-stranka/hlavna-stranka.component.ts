@@ -8,12 +8,4 @@ import {Router} from "@angular/router";
 })
 export class HlavnaStrankaComponent {
 
-
-
-  public showMenu : boolean = false;
-  public toggleMenu(){
-    this.showMenu = !this.showMenu;
-    console.log(this.showMenu);
-  }
-
 }

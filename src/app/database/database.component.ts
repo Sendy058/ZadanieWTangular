@@ -9,7 +9,6 @@ interface Car {
   TelCislo: string;
   Znacka: string;
   Model: string;
-  Stav: string;
   Vin: string;
   Palivo: string
   Sluzba: string;
@@ -26,12 +25,12 @@ interface Car {
 export class DatabaseComponent {
   public allCars: Car[] = [];
   public filterCars: Car[] = [];
-  public carsRef;
+  //public carsRef;
 
   constructor(private firestore: AngularFirestore) {
 
     //this.cars = firestore.collection<Car>("cars").valueChanges();
-    this.carsRef = firestore.collection("cars");
+    //this.carsRef = firestore.collection("cars");
     this.returnID();
   }
   public getAlldata() {
@@ -46,7 +45,7 @@ export class DatabaseComponent {
   public returnID() {
     this.getAlldata().subscribe((data) => {
       this.allCars = data.map((value) => {
-        console.log(value.payload.doc.id);
+       // console.log(value.payload.doc.id);
         return {
           id: value.payload.doc.id,
 
@@ -58,14 +57,6 @@ export class DatabaseComponent {
       this.filterCars = [...this.allCars]
     });
   }
-
-  public showMenu: boolean = false;
-
-  public toggleMenu() {
-    this.showMenu = !this.showMenu;
-    //console.log(this.showMenu);
-  }
-
   public delete(car: Car) {
     this.firestore.collection('cars').doc(car.id).delete();
   }

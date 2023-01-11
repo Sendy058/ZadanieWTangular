@@ -8,7 +8,6 @@ interface Car {
   TelCislo: string;
   Znacka: string;
   Model: string;
-  Stav: string;
   Vin: string;
   Palivo: string
   Sluzba: string;

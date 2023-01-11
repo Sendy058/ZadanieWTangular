@@ -74,7 +74,7 @@ const routes: Routes = [
 
 
   ],
-  entryComponents:[VypisLoginComponent],
+
   providers: [],
   bootstrap: [AppComponent]
 })
